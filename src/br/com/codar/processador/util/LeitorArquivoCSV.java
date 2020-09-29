@@ -23,9 +23,9 @@ public class LeitorArquivoCSV {
 			String linha;
 
 			while ((linha = leitor.readLine()) != null) {
-				String[] values = linha.split(";");
+				String[] colunas = linha.split(";");
 
-				registros.add(Arrays.asList(values));
+				registros.add(Arrays.asList(colunas));
 			}
 
 			return registros;

@@ -7,7 +7,7 @@ import br.com.codar.processador.util.ConversorArquivo;
 public class LeitorArquivoFornecedor implements ConversorArquivo<Fornecedor> {
 
 	private static final String NOME_ARQUIVO_FORNECEDORES_CSV = "fornecedores.csv";
-
+	
 	@Override
 	public Fornecedor converterArquivo(List<String> atributos) {
 		int codigo = Integer.valueOf(atributos.get(0));
